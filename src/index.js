@@ -146,7 +146,7 @@ const SlideFragments = () => (
             <Link href="//storybook.js.org" target="_blank" rel="external">
               Next.js
             </Link>{" "}
-            to smash all together
+            to smash it all together
           </ListItem>
         </Appear>
       </UnorderedList>
@@ -204,7 +204,7 @@ const SlideFragments = () => (
         </Appear>
         <Appear>
           <ListItem>
-            Improving both, performance (Core Web Vitals) and the UX of our
+            Improving both, performance (Core Web Vitals), SEO and the UX of our
             storefront is hard.
           </ListItem>
         </Appear>
