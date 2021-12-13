@@ -14,7 +14,6 @@ import {
   Deck,
   Text,
   Box,
-  Image,
   Notes,
   Link,
   Appear,
