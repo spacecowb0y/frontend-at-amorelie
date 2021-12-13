@@ -155,8 +155,9 @@ const SlideFragments = () => (
     <Slide>
       <Heading>But before we talk about the future...</Heading>
       <Text>
-        ... lets have a quick look of our current frontend stack and some of
-        struggles that our frontend team is going through.
+        ... lets have a quick look of our current frontend stack, some of
+        struggles that our frontend team is going through and let’s talk about
+        the developer experience for a moment.
       </Text>
       <Notes></Notes>
     </Slide>
@@ -165,8 +166,8 @@ const SlideFragments = () => (
       <UnorderedList>
         <Appear>
           <ListItem>
-            Linux, Nginx, MySQL, PHP (LEMP stack) to run Magento 2 📦 (most of the
-            time through Docker 🐳) for local development 👨🏻‍💻
+            Linux, Nginx, MySQL, PHP (LEMP stack) to run Magento 2 📦 (most of
+            the time through Docker 🐳) for local development 👨🏻‍💻
           </ListItem>
         </Appear>
         <Appear>
@@ -204,8 +205,9 @@ const SlideFragments = () => (
         </Appear>
         <Appear>
           <ListItem>
-            Improving the <strong>performance (Core Web Vitals), SEO and the UX</strong> of our
-            storefront is hard.
+            Improving the{" "}
+            <strong>performance (Core Web Vitals), SEO and the UX</strong> of
+            our storefront is hard.
           </ListItem>
         </Appear>
       </UnorderedList>
@@ -263,6 +265,18 @@ const SlideFragments = () => (
     </Slide>
     <Slide>
       <Heading>Storybook.js</Heading>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>Performance and SEO</Heading>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>User Experience</Heading>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>Developer Experience</Heading>
       <Notes></Notes>
     </Slide>
     <Slide>
