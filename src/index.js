@@ -204,7 +204,7 @@ const SlideFragments = () => (
         </Appear>
         <Appear>
           <ListItem>
-            Improving both, performance (Core Web Vitals), SEO and the UX of our
+            Improving performance (Core Web Vitals), SEO and the UX of our
             storefront is hard.
           </ListItem>
         </Appear>
