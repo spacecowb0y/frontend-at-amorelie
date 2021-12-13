@@ -155,8 +155,8 @@ const SlideFragments = () => (
     <Slide>
       <Heading>But before we talk about the future...</Heading>
       <Text>
-        ... lets have a quick overview of our current frontend stack and some of
-        our development processes in general.
+        ... lets have a quick look of our current frontend stack and some of
+        struggles that our frontend team is going through.
       </Text>
       <Notes></Notes>
     </Slide>
@@ -165,7 +165,7 @@ const SlideFragments = () => (
       <UnorderedList>
         <Appear>
           <ListItem>
-            Linux, Nginx, MySQL, PHP (LEMP stack) to run Magento 📦 (most of the
+            Linux, Nginx, MySQL, PHP (LEMP stack) to run Magento 2 📦 (most of the
             time through Docker 🐳) for local development 👨🏻‍💻
           </ListItem>
         </Appear>
@@ -204,7 +204,7 @@ const SlideFragments = () => (
         </Appear>
         <Appear>
           <ListItem>
-            Improving performance (Core Web Vitals), SEO and the UX of our
+            Improving the <strong>performance (Core Web Vitals), SEO and the UX</strong> of our
             storefront is hard.
           </ListItem>
         </Appear>
