@@ -323,7 +323,7 @@ const SlideFragments = () => (
             target="_blank"
             rel="external"
           >
-            What's Frontastic
+            What's Frontastic Cloud?
           </Link>
         </ListItem>
       </UnorderedList>
@@ -333,32 +333,56 @@ const SlideFragments = () => (
       <Heading>Links & Resources</Heading>
       <UnorderedList>
         <ListItem>
-          <Link href="https://rauchg.com/2014/7-principles-of-rich-web-applications" target="_blank" rel="external">
+          <Link
+            href="https://rauchg.com/2014/7-principles-of-rich-web-applications"
+            target="_blank"
+            rel="external"
+          >
             7 Principles of Rich Web Applications
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://rauchg.com/2015/pure-ui" target="_blank" rel="external">
+          <Link
+            href="https://rauchg.com/2015/pure-ui"
+            target="_blank"
+            rel="external"
+          >
             Pure UI
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://www.youtube.com/watch?v=Sklc_fQBmcs" target="_blank" rel="external">
+          <Link
+            href="https://www.youtube.com/watch?v=Sklc_fQBmcs"
+            target="_blank"
+            rel="external"
+          >
             Next.js in 100 Seconds // Plus Full Beginner's Tutorial
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://www.youtube.com/watch?v=Tn6-PIqc4UM" target="_blank" rel="external">
+          <Link
+            href="https://www.youtube.com/watch?v=Tn6-PIqc4UM"
+            target="_blank"
+            rel="external"
+          >
             React in 100 Seconds
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://www.youtube.com/watch?v=zQnBQ4tB3ZA" target="_blank" rel="external">
+          <Link
+            href="https://www.youtube.com/watch?v=zQnBQ4tB3ZA"
+            target="_blank"
+            rel="external"
+          >
             TypeScript in 100 Second
           </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://www.youtube.com/watch?v=5IG4UmULyoA" target="_blank" rel="external">
+          <Link
+            href="https://www.youtube.com/watch?v=5IG4UmULyoA"
+            target="_blank"
+            rel="external"
+          >
             Module Bundlers Explained... Webpack, Rollup, Parcel, and Snowpack
           </Link>
         </ListItem>
@@ -378,7 +402,19 @@ const SlideFragments = () => (
     </Slide>
     <Slide>
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
-        <Heading>Thank you 💖</Heading>
+        <Heading>Thank you for listening 💖</Heading>
+        <Text>
+          Slides: <Link href="/">frontend-at-amorelie.vercel.app</Link>
+          <br />
+          Source code:{" "}
+          <Link
+            href="//github.com/spacecowb0y/frontend-at-amorelie"
+            target="_blank"
+            rel="external"
+          >
+            github.com/spacecowb0y/frontend-at-amorelie
+          </Link>
+        </Text>
       </FlexBox>
       <Notes></Notes>
     </Slide>
