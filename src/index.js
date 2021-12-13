@@ -157,7 +157,7 @@ const SlideFragments = () => (
       <Text>
         ... let’s have a quick look of our current frontend stack, some of
         struggles that the frontend team is going through and let’s talk about
-        the developer experience of adding or maintaining new features for our storefront.
+        the developer experience of adding or maintaining features in our current storefront codebase.
       </Text>
       <Notes></Notes>
     </Slide>
