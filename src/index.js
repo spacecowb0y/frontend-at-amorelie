@@ -186,8 +186,8 @@ const SlideFragments = () => (
       <UnorderedList>
         <Appear>
           <ListItem>
-            Out storefront is a <strong>monolitch application</strong> based on
-            PHP were the frontend architecture relays entirely on{" "}
+            Our storefront is a <strong>monolith application</strong> based on
+            PHP where the frontend architecture relies entirely on{" "}
             <Link href="//magento.com" target="_blank" rel="external">
               Magento 2
             </Link>{" "}
