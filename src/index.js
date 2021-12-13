@@ -186,21 +186,21 @@ const SlideFragments = () => (
       <UnorderedList>
         <Appear>
           <ListItem>
-            Out storefront is a monolitch application based on PHP were the
+            Out storefront is a <strong>monolitch application</strong> based on PHP were the
             frontend architecture relays entirely on Magento and its internal
             building tools, templating and rendering engines
           </ListItem>
         </Appear>
         <Appear>
           <ListItem>
-            The development cycle along with the CI/CD strategy for frontend is
-            tight to the backend and its infrastructure
+            The development cycle along with the CI/CD strategy for <strong>frontend is
+           tight to the backend and its infrastructure</strong>
           </ListItem>
         </Appear>
         <Appear>
           <ListItem>
             Improving both, performance (Core Web Vitals) and the UX of our
-            storefront
+            storefront is hard.
           </ListItem>
         </Appear>
       </UnorderedList>
