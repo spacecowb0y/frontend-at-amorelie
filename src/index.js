@@ -216,6 +216,11 @@ const SlideFragments = () => (
       </Text>
       <Notes></Notes>
     </Slide>
+    <Slide
+      backgroundImage={`url(${node_modules_image})`}
+      backgroundSize="contain"
+      backgroundColor="white"
+    ></Slide>
     <Slide>
       <Heading>Benefits of using Webpack</Heading>
       <UnorderedList>
@@ -247,12 +252,6 @@ const SlideFragments = () => (
       </UnorderedList>
       <Notes></Notes>
     </Slide>
-    <Slide
-      backgroundImage={`url(${node_modules_image})`}
-      backgroundSize="contain"
-      backgroundColor="white"
-    ></Slide>
-
     <Slide>
       <Heading>React, Next.js and Typescript</Heading>
       <Notes></Notes>
