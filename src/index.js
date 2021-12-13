@@ -94,13 +94,13 @@ const SlideFragments = () => (
         <Link href="//diego.earth" target="_blank" rel="external">
           Diego
         </Link>
-        . I first got into web dev in the early 2000s, and only as I type this
+        . I first got into web dev in the early 2000’s, and only as I type this
         sentence do I realize how long ago that was.
       </Text>
       <Text>
         Back then <CodeSpan>{"<HTML/>"}</CodeSpan> tags were written all in
         caps, layouts were built using <CodeSpan>{"<TABLES/>"}</CodeSpan> and
-        transparent PNG’s weren’t supported for most browsers 😅.
+        transparent PNGs weren’t supported for most browsers 😅.
       </Text>
       <CodePane language="html">{`
         <BODY>
@@ -155,7 +155,7 @@ const SlideFragments = () => (
     <Slide>
       <Heading>But before we talk about the future...</Heading>
       <Text>
-        ... let’s have a quick look of our current frontend stack, some of
+        ... let’s have a quick look of our current frontend stack, some of the 
         struggles that the frontend team is going through and let’s talk about
         the developer experience of adding or maintaining features in our current storefront codebase.
       </Text>
@@ -199,15 +199,15 @@ const SlideFragments = () => (
           <ListItem>
             The development cycle along with the CI/CD strategy for{" "}
             <strong>
-              frontend is tight to the backend and its infrastructure
+              frontend is tied to the backend and its infrastructure
             </strong>
           </ListItem>
         </Appear>
         <Appear>
           <ListItem>
             Improving the{" "}
-            <strong>performance (Core Web Vitals), SEO and the UX</strong> of
-            our storefront is hard.
+            <strong>performance (CWV), SEO and the UX</strong> of
+            our storefront is hard
           </ListItem>
         </Appear>
       </UnorderedList>
@@ -219,7 +219,7 @@ const SlideFragments = () => (
         In the past, you’ve needed to use several tools to automate the
         development process, e.g. Browserify + Gulp or Grunt + a lot of plugins.
         Webpack is powerful enough to do what all these tools combined can do
-        and more!.
+        and more!
       </Text>
       <Notes></Notes>
     </Slide>
