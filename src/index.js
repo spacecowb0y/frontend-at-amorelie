@@ -155,9 +155,9 @@ const SlideFragments = () => (
     <Slide>
       <Heading>But before we talk about the future...</Heading>
       <Text>
-        ... lets have a quick look of our current frontend stack, some of
-        struggles that our frontend team is going through and let’s talk about
-        the developer experience for a moment.
+        ... let’s have a quick look of our current frontend stack, some of
+        struggles that the frontend team is going through and let’s talk about
+        the developer experience of adding or maintaining new features for our storefront.
       </Text>
       <Notes></Notes>
     </Slide>
