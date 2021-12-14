@@ -231,6 +231,13 @@ const SlideFragments = () => (
       </FlexBox>
       <Notes></Notes>
     </Slide>
+    <Slide
+      backgroundImage={`url(${nodeModulesMeme})`}
+      backgroundSize="contain"
+      backgroundColor="white"
+    >
+      <Notes></Notes>
+    </Slide>
     <Slide>
       <Heading>GRUNT VS WEBPACK</Heading>
       <Text>
@@ -239,13 +246,6 @@ const SlideFragments = () => (
         Webpack is powerful enough to do what all these tools combined can do
         and more!
       </Text>
-      <Notes></Notes>
-    </Slide>
-    <Slide
-      backgroundImage={`url(${nodeModulesMeme})`}
-      backgroundSize="contain"
-      backgroundColor="white"
-    >
       <Notes></Notes>
     </Slide>
     <Slide>
