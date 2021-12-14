@@ -390,6 +390,14 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
+      <Heading>NEXT.JS</Heading>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>TYPESCRIPT</Heading>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
       <Heading>STORYBOOK.JS</Heading>
       <Notes></Notes>
     </Slide>
