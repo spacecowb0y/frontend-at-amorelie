@@ -293,7 +293,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>What is a component?</Heading>
+      <Heading>WHAT IS A COMPONENT?</Heading>
       <Text>
         Is just a javascript function where the return value is our UI (HTML)
         which is written in a special syntax call <CodeSpan>JSX</CodeSpan>.
@@ -308,7 +308,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>How to pass data to a component?</Heading>
+      <Heading>HOW TO PASS DATA TO A COMPONENT?</Heading>
       <Text>
         If we want to pass data to the component, we use <CodeSpan>props</CodeSpan> to render it
         into the component and if the value changes: 💥
@@ -323,7 +323,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>How to give a component internal state?</Heading>
+      <Heading>HOW TO GIVE A COMPONENT INTERNAL STATE?</Heading>
       <Text>The answer is we can use the <CodeSpan>useState()</CodeSpan> hooks.</Text>
       <CodePane language="jsx">{`
         import { useState } from 'react';
