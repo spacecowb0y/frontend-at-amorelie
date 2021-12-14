@@ -54,7 +54,7 @@ module.exports = {
   // Default for boilerplate generation.
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Frontend Tech Stack for a Modern Ecommerce: From Magento to Headless by Diego Peralta',
+      title: 'Frontend Tech Stack for a Modern E-commerce: From Magento to Headless by Diego Peralta',
       template: './src/index.html'
     })
   ]

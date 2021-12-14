@@ -71,7 +71,7 @@ const SlideFragments = () => (
     >
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
         <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>
-          FRONTEND TECH STACK FOR A MODERN ECOMMERCE: FROM MAGENTO TO HEADLESS
+          FRONTEND TECH STACK FOR A MODERN E-COMMERCE: FROM MAGENTO TO HEADLESS
         </Heading>
         <Appear>
           <Text
