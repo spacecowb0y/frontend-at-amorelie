@@ -512,7 +512,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>WHAT'S A STORY?</Heading>
+      <Heading>WHAT’S A STORY?</Heading>
       <Text>
         A story captures the rendered state of a UI component. Developers write
         multiple stories per component that describe all the “interesting”
