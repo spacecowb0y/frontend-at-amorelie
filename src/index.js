@@ -46,6 +46,8 @@ import bgAmorelie from "../public/amorelie.webp";
 import bgBath from "../public/bg2.webp";
 import magentoMeme from "../public/magento.jpg";
 import storybook from "../public/storybook.png";
+import tsErrorImage from "../public/typescript_error_id.png";
+import jsErrorImage from "../public/js-error.png";
 
 // SPECTACLE_CLI_TEMPLATE_START
 const template = () => (
@@ -504,6 +506,29 @@ const SlideFragments = () => (
             <img src={props.img} alt={props.alt} />
           </a>
       `}</CodePane>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>WHILE IN JAVASCRIPT</Heading>
+      <Text>
+        You can do all can of crazy thing like define an object that doesn’t exist.
+      </Text>
+      <CodePane language="javascript">{`
+        someObject.whatever();
+      `}</CodePane>
+      <Notes></Notes>
+    </Slide>
+
+    <Slide
+      backgroundImage={`url(${jsErrorImage})`}
+      backgroundSize="cover"
+    >
+      <Notes></Notes>
+    </Slide>
+    <Slide
+      backgroundImage={`url(${tsErrorImage})`}
+      backgroundSize="cover"
+    >
       <Notes></Notes>
     </Slide>
     <Slide>
