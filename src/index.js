@@ -302,7 +302,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>How to pass data to the component?</Heading>
+      <Heading>How to pass data to a component?</Heading>
       <Text>
         If we want to pass data to the component, we use <CodeSpan>props</CodeSpan> to render it
         into the component and if the value changes: 💥
@@ -317,7 +317,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>How to give the component internal state?</Heading>
+      <Heading>How to give a component internal state?</Heading>
       <Text>The answer is we can use the `useState()` hooks.💥</Text>
       <CodePane language="jsx">{`
         import { useState } from 'react';
