@@ -306,7 +306,7 @@ const SlideFragments = () => (
           return <p>Hello, Amorelie!</p>
         }
        
-        <Item text="🛍" />
+        <Item />
       `}</CodePane>
       <Notes></Notes>
     </Slide>
@@ -322,7 +322,7 @@ const SlideFragments = () => (
           return <p>{props.text}</p>
         }
        
-        <Item text="🛍" />
+        <Item text="T-shirt (XL) 👕" />
       `}</CodePane>
       <Notes></Notes>
     </Slide>
