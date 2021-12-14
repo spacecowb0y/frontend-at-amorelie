@@ -323,7 +323,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>HOW TO GIVE A COMPONENT INTERNAL STATE?</Heading>
+      <Heading>HOW TO GIVE A COMPONENT AN INTERNAL STATE?</Heading>
       <Text>The answer is we can use the <CodeSpan>useState()</CodeSpan> hooks.</Text>
       <CodePane language="jsx">{`
         import { useState } from 'react';
