@@ -18,6 +18,7 @@ import {
   Link,
   Appear,
   Image,
+  OrderedList,
 } from "spectacle";
 
 // SPECTACLE_CLI_THEME_START
@@ -472,23 +473,48 @@ const SlideFragments = () => (
       `}</CodePane>
     </Slide>
     <Slide>
+      <Heading>THE BENEFITS OF NEXT.JS</Heading>
+      <UnorderedList>
+        <ListItem>Built-in support for internationalized (i18n) routing.</ListItem>
+        <ListItem>It includes a variety of built-in performance optimizations to help us achieve good Core Web Vitals.</ListItem>
+        <ListItem>File-system routing</ListItem>
+        <ListItem>Optimized bundle splitting algorithm created by the Google Chrome team.</ListItem>
+        <ListItem>Typescript support</ListItem>
+      </UnorderedList>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
       <Heading>TYPESCRIPT</Heading>
       <Text>
         TypeScript is a strongly typed programming language that{" "}
         <strong>validates your JS ahead of time</strong> with static type
         checking.
       </Text>
-      <CodePane language="json">{`
-        // tsconfig.json
-        {
-          "compilerOptions": {
-            "module": "system",
-            "noImplicitAny": true,
-            "removeCommentes": true,
-            ...
-          }
+      <CodePane language="typescript">{`
+        import * as React from "react";
+ 
+        interface UserThumbnailProps {
+          img: string;
+          alt: string;
+          url: string;
         }
+        
+        export const UserThumbnail = (props: UserThumbnailProps) =>
+          <a href={props.url}>
+            <img src={props.img} alt={props.alt} />
+          </a>
       `}</CodePane>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>THE BENEFITS OF TYPESCRIPT</Heading>
+      <UnorderedList>
+        <ListItem>Static Type-checking</ListItem>
+        <ListItem>ES6 Feature Support</ListItem>
+        <ListItem>Enhanced IDE Experience</ListItem>
+        <ListItem>Early spotted bugs</ListItem>
+        <ListItem>Cross-platform and cross-browser compatibility</ListItem>
+      </UnorderedList>
       <Notes></Notes>
     </Slide>
     <Slide>
