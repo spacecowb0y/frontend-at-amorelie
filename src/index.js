@@ -221,7 +221,10 @@ const SlideFragments = () => (
     <Slide backgroundImage={`url(${magentoMeme})`} backgroundSize="contain">
       <Notes></Notes>
     </Slide>
-
+    <Slide>
+      <Heading>Module Bundlers</Heading>
+      <Notes></Notes>
+    </Slide>
     <Slide>
       <Heading>GRUNT VS WEBPACK</Heading>
       <Text>
