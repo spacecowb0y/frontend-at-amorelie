@@ -23,22 +23,26 @@ import {
 const theme = {
   colors: {
     primary: "#fff",
-    secondary: "#d8ffab",
+    secondary: "#2cd5c4",
+    tertiary: "#0b2f61",
+    quaternary: "#d8ffab",
     senary: "#0b2f61",
     septenary: "#452861",
     octonary: "#2cd5c4",
   },
   fonts: {
-    header: '"Avenir Next", sans-serif',
+    header: '"Roboto Condensed", "Avenir Next", sans-serif',
     text: "system-ui, sans-serif",
   },
 };
 // SPECTACLE_CLI_THEME_END
 
-import node_modules_image from "../public/node_modules.png";
-import the_end_image from "../public/end.webp";
-import amorelie from "../public/amorelie.webp";
-import magento from "../public/magento.jpg";
+import nodeModulesMeme from "../public/node_modules.png";
+import bgTheEnd from "../public/end.webp";
+import bgIntro from "../public/bg.webp";
+import bgAmorelie from "../public/amorelie.webp";
+import bgBath from "../public/bg2.webp";
+import magentoMeme from "../public/magento.jpg";
 
 // SPECTACLE_CLI_TEMPLATE_START
 const template = () => (
@@ -61,13 +65,13 @@ const template = () => (
 const SlideFragments = () => (
   <>
     <Slide
-      backgroundImage={`url(${amorelie})`}
+      backgroundImage={`url(${bgIntro})`}
       backgroundSize="cover"
-      backgroundOpacity="0.25"
+      backgroundOpacity="0.4"
     >
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
         <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>
-          Frontend Tech Stack for a Modern Ecommerce: From Magento to Headless
+          FRONTEND TECH STACK FOR A MODERN ECOMMERCE: FROM MAGENTO TO HEADLESS
         </Heading>
         <Appear>
           <Text
@@ -88,7 +92,7 @@ const SlideFragments = () => (
       </Notes>
     </Slide>
     <Slide>
-      <Heading>$ whoami</Heading>
+      <Heading>$ WHOAMI</Heading>
       <Text>
         My name is{" "}
         <Link href="//diego.earth" target="_blank" rel="external">
@@ -118,14 +122,15 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Which tech stack are we gonna review today?</Heading>
+      <Heading>WHICH TECH STACK ARE WE GONNA REVIEW TODAY?</Heading>
       <UnorderedList>
         <Appear>
           <ListItem>
             <Link href="//webpack.js.org" target="_blank" rel="external">
               Webpack
             </Link>{" "}
-            for bundling our javascript libraries and stylesheets
+            for <strong>bundling</strong> our javascript libraries and
+            stylesheets
           </ListItem>
         </Appear>
         <Appear>
@@ -137,7 +142,7 @@ const SlideFragments = () => (
             <Link href="//storybook.js.org" target="_blank" rel="external">
               Storybook
             </Link>{" "}
-            for building and showcasing our component library
+            for <strong>building and showcasing</strong> our component library
           </ListItem>
         </Appear>
         <Appear>
@@ -146,28 +151,32 @@ const SlideFragments = () => (
             <Link href="//storybook.js.org" target="_blank" rel="external">
               Next.js
             </Link>{" "}
-            to smash it all together
+            to <strong>smash it all together</strong>
           </ListItem>
         </Appear>
       </UnorderedList>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>But before we talk about the future...</Heading>
+      <Heading>BUT BEFORE WE TALK ABOUT THE FUTURE...</Heading>
       <Text>
-        ... let’s have a quick look of our current frontend stack, some of the 
+        ... let’s have a quick look of our current frontend stack, some of the
         struggles that the frontend team is going through and let’s talk about
-        the developer experience of adding or maintaining features in our current storefront codebase.
+        the developer experience of adding or maintaining features in our
+        current storefront codebase.
       </Text>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Our current stack</Heading>
+      <Heading>OUR CURRENT STACK</Heading>
       <UnorderedList>
         <Appear>
           <ListItem>
-            Linux, Nginx, MySQL, PHP (LEMP stack) to run Magento 2 📦 (most of
-            the time through Docker 🐳) for local development 👨🏻‍💻
+            Linux, Nginx, MySQL, PHP (LEMP stack) to run{" "}
+            <Link href="//magento.com" target="_blank" rel="external">
+              Magento 2
+            </Link>{" "}
+            📦 (most of the time through Docker 🐳) for local development 👨🏻‍💻
           </ListItem>
         </Appear>
         <Appear>
@@ -183,16 +192,13 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>The challenges that we face today</Heading>
+      <Heading>THE CHALLENGES THAT WE FACE TODAY</Heading>
       <UnorderedList>
         <Appear>
           <ListItem>
             Our storefront is a <strong>monolith application</strong> based on
-            PHP where the frontend architecture relies entirely on{" "}
-            <Link href="//magento.com" target="_blank" rel="external">
-              Magento 2
-            </Link>{" "}
-            and its internal building tools, templating and rendering engines
+            PHP where the frontend architecture relies entirely on Magento 2 and
+            its internal building tools, templating and rendering engines
           </ListItem>
         </Appear>
         <Appear>
@@ -205,16 +211,15 @@ const SlideFragments = () => (
         </Appear>
         <Appear>
           <ListItem>
-            Improving the{" "}
-            <strong>performance (CWV), SEO and the UX</strong> of
+            Improving the <strong>performance (CWV), SEO and the UX</strong> of
             our storefront is hard
           </ListItem>
         </Appear>
       </UnorderedList>
     </Slide>
-    <Slide backgroundImage={`url(${magento})`} backgroundSize="contain"></Slide>
+    <Slide backgroundImage={`url(${magentoMeme})`} backgroundSize="contain"></Slide>
     <Slide>
-      <Heading>Grunt vs Webpack</Heading>
+      <Heading>GRUNT VS WEBPACK</Heading>
       <Text>
         In the past, you’ve needed to use several tools to automate the
         development process, e.g. Browserify + Gulp or Grunt + a lot of plugins.
@@ -224,12 +229,12 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide
-      backgroundImage={`url(${node_modules_image})`}
+      backgroundImage={`url(${nodeModulesMeme})`}
       backgroundSize="contain"
       backgroundColor="white"
     ></Slide>
     <Slide>
-      <Heading>Benefits of using Webpack</Heading>
+      <Heading>THE BENEFITS OF USING WEBPACK</Heading>
       <UnorderedList>
         <Appear>
           <ListItem>
@@ -260,27 +265,27 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>React, Next.js and Typescript</Heading>
+      <Heading>REACT, NEXT.JS AND TYPESCRIPT</Heading>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Storybook.js</Heading>
+      <Heading>STORYBOOK.JS</Heading>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Performance and SEO</Heading>
+      <Heading>PERFORMANCE AND SEO</Heading>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>User Experience</Heading>
+      <Heading>USER EXPERIENCE</Heading>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Developer Experience</Heading>
+      <Heading>DEVELOPER EXPERIENCE</Heading>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>References</Heading>
+      <Heading>REFERENCES</Heading>
       <UnorderedList>
         <ListItem>
           Getting Started guides for:{" "}
@@ -348,7 +353,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Links & Resources</Heading>
+      <Heading>LINKS & RESOURCES</Heading>
       <UnorderedList>
         <ListItem>
           <Link
@@ -408,19 +413,23 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide
-      backgroundImage={`url(${the_end_image})`}
+      backgroundImage={`url(${bgTheEnd})`}
       backgroundSize="cover"
       backgroundColor="white"
     ></Slide>
-    <Slide>
+    <Slide
+      backgroundImage={`url(${bgAmorelie})`}
+      backgroundSize="cover"
+      backgroundOpacity="0.4"
+    >
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
-        <Heading>Q&A 🎤</Heading>
+        <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>QUESTIONS? 🙋🏻‍♀️</Heading>
       </FlexBox>
       <Notes></Notes>
     </Slide>
     <Slide>
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
-        <Heading>Thank you for listening 💖</Heading>
+        <Heading>💖 THANK YOU FOR LISTENING...</Heading>
         <Text>
           Slides: <Link href="/">frontend-at-amorelie.vercel.app</Link>
           <br />
@@ -435,6 +444,17 @@ const SlideFragments = () => (
         </Text>
       </FlexBox>
       <Notes></Notes>
+    </Slide>
+    <Slide
+      backgroundImage={`url(${bgBath})`}
+      backgroundSize="cover"
+      backgroundOpacity="0.4"
+    >
+      <FlexBox flexDirection="column" justifyItems="center" height="100vh">
+        <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>
+          ...AND HAPPY CODING!
+        </Heading>
+      </FlexBox>
     </Slide>
   </>
 );
