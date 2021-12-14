@@ -17,6 +17,7 @@ import {
   Notes,
   Link,
   Appear,
+  Image,
 } from "spectacle";
 
 // SPECTACLE_CLI_THEME_START
@@ -67,7 +68,7 @@ const SlideFragments = () => (
     <Slide
       backgroundImage={`url(${bgIntro})`}
       backgroundSize="cover"
-      backgroundOpacity="0.4"
+      backgroundOpacity={0.4}
     >
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
         <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>
@@ -160,10 +161,10 @@ const SlideFragments = () => (
     <Slide>
       <Heading>BUT BEFORE WE TALK ABOUT THE FUTURE...</Heading>
       <Text>
-        ... let’s have a quick look of our current frontend stack, some of the
-        struggles that the frontend team is going through and let’s talk about
-        the developer experience of adding or maintaining features in our
-        current storefront codebase.
+        ... let’s have a quick look to the current tech stack of our storefront,
+        some of the struggles that the frontend team is going through and let’s
+        talk about the developer experience of adding or maintaining features in
+        our current codebase.
       </Text>
       <Notes></Notes>
     </Slide>
@@ -212,12 +213,15 @@ const SlideFragments = () => (
         <Appear>
           <ListItem>
             Improving the <strong>performance (CWV), SEO and the UX</strong> of
-            our storefront is hard
+            our storefront is becoming harder and harder
           </ListItem>
         </Appear>
       </UnorderedList>
     </Slide>
-    <Slide backgroundImage={`url(${magentoMeme})`} backgroundSize="contain"></Slide>
+    <Slide backgroundImage={`url(${magentoMeme})`} backgroundSize="contain">
+      <Notes></Notes>
+    </Slide>
+
     <Slide>
       <Heading>GRUNT VS WEBPACK</Heading>
       <Text>
@@ -232,7 +236,9 @@ const SlideFragments = () => (
       backgroundImage={`url(${nodeModulesMeme})`}
       backgroundSize="contain"
       backgroundColor="white"
-    ></Slide>
+    >
+      <Notes></Notes>
+    </Slide>
     <Slide>
       <Heading>THE BENEFITS OF USING WEBPACK</Heading>
       <UnorderedList>
@@ -265,7 +271,122 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>REACT, NEXT.JS AND TYPESCRIPT</Heading>
+      <Heading>REACT.JS</Heading>
+      <Text>
+        React is a javascript library to build UIs made by Facebook in 2013. We
+        use to create components that represent{" "}
+        <strong>logical reusable parts of the UI</strong>.
+      </Text>
+      <CodePane language="jsx">{`
+        <Header>
+          <Logo icon="🍆" />
+          <Title text="Hello, Amorelie!" />
+          <Button label="Click me" onClick= { () => doSomething() } />
+        </Header>
+      `}</CodePane>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>What is a component?</Heading>
+      <Text>
+        Is just a javascript function where the return value is our UI (HTML)
+        which is written in a special syntax call JSX.
+      </Text>
+      <CodePane language="jsx">{`
+        function Item() {
+          return <p>Hello, Amorelie!</p>
+        }
+       
+        <Item text="🛍" />
+      `}</CodePane>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>How to pass data to the component?</Heading>
+      <Text>
+        If we want to pass data to the component, we use `props` to render it
+        into the component and if the value changes: 💥
+      </Text>
+      <CodePane language="jsx">{`
+        function Item(props) {
+          return <p>{props.text}</p>
+        }
+       
+        <Item text="🛍" />
+      `}</CodePane>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>How to give the component internal state?</Heading>
+      <Text>The answer is we can use the `useState()` hooks.💥</Text>
+      <CodePane language="jsx">{`
+        import { useState } from 'react';
+
+        const [count, setCount] = useState(0);
+
+        return <>
+          <p>{count}</p>
+          <button onClick={ () => setCount(count + 1)}>+</button>
+        </>
+      `}</CodePane>
+      <Notes></Notes>
+    </Slide>
+    <Slide>
+      <Heading>Why React?</Heading>
+      <Text>
+        A great reason to use React.js is not the library itself but its massive
+        ecosystem.
+      </Text>
+      <UnorderedList>
+        <ListItem>
+          Do you need static site? You have{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Gatsby
+          </Link>
+          .
+        </ListItem>
+        <ListItem>
+          Server side rendering? You have{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Next
+          </Link>
+          .
+        </ListItem>
+        <ListItem>
+          Animations?{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Spring
+          </Link>
+          . Forms?{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Formik
+          </Link>
+          .
+        </ListItem>
+        <ListItem>
+          State managment?{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Redux
+          </Link>
+          ,{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Mobx
+          </Link>
+          ,{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Flux
+          </Link>
+          ,{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Xstate
+          </Link>
+          ,{" "}
+          <Link href="//babeljs.io" target="_blank" rel="external">
+            Recoil
+          </Link>
+          .
+        </ListItem>
+      </UnorderedList>
       <Notes></Notes>
     </Slide>
     <Slide>
@@ -416,14 +537,18 @@ const SlideFragments = () => (
       backgroundImage={`url(${bgTheEnd})`}
       backgroundSize="cover"
       backgroundColor="white"
-    ></Slide>
+    >
+      <Notes></Notes>
+    </Slide>
     <Slide
       backgroundImage={`url(${bgAmorelie})`}
       backgroundSize="cover"
-      backgroundOpacity="0.4"
+      backgroundOpacity={0.4}
     >
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
-        <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>QUESTIONS? 🙋🏻‍♀️</Heading>
+        <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>
+          QUESTIONS? 🙋🏻‍♀️
+        </Heading>
       </FlexBox>
       <Notes></Notes>
     </Slide>
@@ -448,7 +573,7 @@ const SlideFragments = () => (
     <Slide
       backgroundImage={`url(${bgBath})`}
       backgroundSize="cover"
-      backgroundOpacity="0.4"
+      backgroundOpacity={0.4}
     >
       <FlexBox flexDirection="column" justifyItems="center" height="100vh">
         <Heading style={{ textShadow: "10px 0px 30px rgba(0, 0, 0, 0.75)" }}>
