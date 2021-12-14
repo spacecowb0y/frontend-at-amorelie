@@ -279,8 +279,8 @@ const SlideFragments = () => (
     <Slide>
       <Heading>REACT.JS</Heading>
       <Text>
-        React is a javascript library to build UIs made by Facebook in 2013. It’s
-        used to create components that represent{" "}
+        React is a javascript library to build UIs made by Facebook in 2013. We
+        can use it to create components that represent{" "}
         <strong>logical reusable parts of the UI</strong>.
       </Text>
       <CodePane language="jsx">{`
@@ -401,9 +401,8 @@ const SlideFragments = () => (
     <Slide>
       <Heading>NEXT.JS</Heading>
       <Text>
-        Next.js gives you the best developer experience with all the features
-        you need for production:{" "}
-        <strong>hybrid static & server rendering</strong>,{" "}
+        Next.js gives us the best developer experience with all the features we
+        need for production: <strong>hybrid static & server rendering</strong>,{" "}
         <strong>TypeScript support</strong>, <strong>smart bundling</strong>,{" "}
         <strong>route pre-fetching</strong>, and more.{" "}
         <strong>No config needed</strong>.
@@ -522,7 +521,8 @@ const SlideFragments = () => (
       <Text>
         Each example component has a set of stories that show the states it
         supports. You can browse the stories in the UI and see the code behind
-        them in files that end with <CodeSpan>.stories.js</CodeSpan> or <CodeSpan>.stories.ts</CodeSpan>.
+        them in files that end with <CodeSpan>.stories.js</CodeSpan> or{" "}
+        <CodeSpan>.stories.ts</CodeSpan>.
       </Text>
       <Notes></Notes>
     </Slide>
