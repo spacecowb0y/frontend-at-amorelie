@@ -181,7 +181,7 @@ const SlideFragments = () => (
           </ListItem>
         </Appear>
         <Appear>
-          <ListItem>HTML and CSS preprossed with LESS</ListItem>
+          <ListItem>HTML and CSS preprocessed with LESS</ListItem>
         </Appear>
         <Appear>
           <ListItem>jQuery and Knockout</ListItem>
