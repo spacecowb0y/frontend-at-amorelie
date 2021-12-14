@@ -338,7 +338,7 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Why React?</Heading>
+      <Heading>WHY REACT?</Heading>
       <Text>
         A great reason to use React.js is not the library itself but its massive
         ecosystem.
