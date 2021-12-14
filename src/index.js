@@ -570,7 +570,7 @@ const SlideFragments = () => (
         states a component can support.
       </Text>
       <Text>
-        Each example component has a set of stories that show the states it
+        Each component has a set of stories that show the states it
         supports. You can browse the stories in the UI and see the code behind
         them in files that end with <CodeSpan>.stories.js</CodeSpan> or{" "}
         <CodeSpan>.stories.ts</CodeSpan>.
