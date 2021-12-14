@@ -44,6 +44,7 @@ import bgIntro from "../public/bg.webp";
 import bgAmorelie from "../public/amorelie.webp";
 import bgBath from "../public/bg2.webp";
 import magentoMeme from "../public/magento.jpg";
+import performanceImage from "../public/performance.png";
 
 // SPECTACLE_CLI_TEMPLATE_START
 const template = () => (
@@ -408,6 +409,7 @@ const SlideFragments = () => (
     </Slide>
     <Slide>
       <Heading>PERFORMANCE AND SEO</Heading>
+      <Image src={performanceImage} width="100%" height="100vh" />
       <Notes></Notes>
     </Slide>
     <Slide>
