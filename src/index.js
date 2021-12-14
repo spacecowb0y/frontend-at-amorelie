@@ -222,7 +222,9 @@ const SlideFragments = () => (
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>Module Bundlers</Heading>
+      <FlexBox flexDirection="column" justifyItems="center" height="100vh">
+        <Heading>MODULE BUNDLERS</Heading>
+      </FlexBox>
       <Notes></Notes>
     </Slide>
     <Slide>
