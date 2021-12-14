@@ -290,7 +290,7 @@ const SlideFragments = () => (
       <Heading>What is a component?</Heading>
       <Text>
         Is just a javascript function where the return value is our UI (HTML)
-        which is written in a special syntax call JSX.
+        which is written in a special syntax call <CodeSpan>JSX</CodeSpan>.
       </Text>
       <CodePane language="jsx">{`
         function Item() {
@@ -304,7 +304,7 @@ const SlideFragments = () => (
     <Slide>
       <Heading>How to pass data to the component?</Heading>
       <Text>
-        If we want to pass data to the component, we use `props` to render it
+        If we want to pass data to the component, we use <CodeSpan>props</CodeSpan> to render it
         into the component and if the value changes: 💥
       </Text>
       <CodePane language="jsx">{`
