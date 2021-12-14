@@ -511,7 +511,7 @@ const SlideFragments = () => (
     <Slide>
       <Heading>WHILE IN JAVASCRIPT</Heading>
       <Text>
-        You can do all can of crazy thing like define an object that doesn’t exist.
+        You can do all kind of crazy things like define an object that doesn’t exist.
       </Text>
       <CodePane language="javascript">{`
         someObject.whatever();
