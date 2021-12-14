@@ -662,11 +662,11 @@ const SlideFragments = () => (
         </ListItem>
         <ListItem>
           <Link
-            href="//docs.frontastic.cloud/docs"
+            href="https://frontendmasters.com/"
             target="_blank"
             rel="external"
           >
-            What's Frontastic Cloud?
+            Frontend Masters — Learn JavaScript, React, Vue & Angular...
           </Link>
         </ListItem>
       </UnorderedList>
