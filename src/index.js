@@ -44,7 +44,7 @@ import bgIntro from "../public/bg.webp";
 import bgAmorelie from "../public/amorelie.webp";
 import bgBath from "../public/bg2.webp";
 import magentoMeme from "../public/magento.jpg";
-import performanceImage from "../public/performance.png";
+import storybook from "../public/storybook.png";
 
 // SPECTACLE_CLI_TEMPLATE_START
 const template = () => (
@@ -310,8 +310,9 @@ const SlideFragments = () => (
     <Slide>
       <Heading>HOW TO PASS DATA TO A COMPONENT?</Heading>
       <Text>
-        If we want to pass data to the component, we use <CodeSpan>props</CodeSpan> to render it
-        into the component and if the value changes: 💥
+        If we want to pass data to the component, we use{" "}
+        <CodeSpan>props</CodeSpan> to render it into the component and if the
+        value changes: 💥
       </Text>
       <CodePane language="jsx">{`
         function Item(props) {
@@ -324,7 +325,9 @@ const SlideFragments = () => (
     </Slide>
     <Slide>
       <Heading>HOW TO GIVE A COMPONENT AN INTERNAL STATE?</Heading>
-      <Text>The answer is we can use the <CodeSpan>useState()</CodeSpan> hooks.</Text>
+      <Text>
+        The answer is we can use the <CodeSpan>useState()</CodeSpan> hooks.
+      </Text>
       <CodePane language="jsx">{`
         import { useState } from 'react';
 
@@ -397,28 +400,151 @@ const SlideFragments = () => (
     </Slide>
     <Slide>
       <Heading>NEXT.JS</Heading>
+      <Text>
+        Next.js gives you the best developer experience with all the features
+        you need for production:{" "}
+        <strong>hybrid static & server rendering</strong>,{" "}
+        <strong>TypeScript support</strong>, <strong>smart bundling</strong>,{" "}
+        <strong>route pre-fetching</strong>, and more.{" "}
+        <strong>No config needed</strong>.
+      </Text>
       <Notes></Notes>
     </Slide>
     <Slide>
+      <FlexBox flexDirection="column" justifyItems="center" height="100vh">
+        <Heading>SSG vs SSR vs ISR</Heading>
+      </FlexBox>
+    </Slide>
+    <Slide>
+      <Heading>STATIC SITE GENERATION</Heading>
+      <Text>
+        Render <strong>all pages</strong> at <strong>build time</strong>. Use
+        case: blog or static site.
+      </Text>
+      <CodePane language="jsx">{`
+        export async function getStaticProps() {
+          const req = await fetch("/some-api");
+          const product = await req.json();
+
+          return {
+            props: { product },
+          }
+        }
+
+        export default function Product({ product }) {
+          return <h1>Product { product.name }</h1>
+        }
+      `}</CodePane>
+    </Slide>
+    <Slide>
+      <Heading>SERVER-SIDE RENDERING</Heading>
+      <Text>
+        Generate <strong>each page</strong> at <strong>request time</strong>.
+        Use case: application with changing data.
+      </Text>
+      <CodePane language="jsx">{`
+        export async function getServerSideProps() {
+          const req = await fetch("/some-api");
+          const product = await req.json();
+
+          return {
+            props: { product },
+          }
+          ...
+        }
+      `}</CodePane>
+    </Slide>
+    <Slide>
+      <Heading>INCREMENTAL STATIC REGENERATION</Heading>
+      <Text>
+        Re-generate single pages in the background. Use case: Online shop.
+      </Text>
+      <CodePane language="jsx">{`
+        export async function getServerSideProps() {
+          const req = await fetch("/some-api");
+          const product = await req.json();
+
+          return {
+            props: { product },
+            revalidate: 30
+          }
+          ...
+        }
+      `}</CodePane>
+    </Slide>
+    <Slide>
       <Heading>TYPESCRIPT</Heading>
+      <Text>
+        TypeScript is a strongly typed programming language that{" "}
+        <strong>validates your JS ahead of time</strong> with static type
+        checking.
+      </Text>
+      <CodePane language="json">{`
+        // tsconfig.json
+        {
+          "compilerOptions": {
+            "module": "system",
+            "noImplicitAny": true,
+            "removeCommentes": true,
+            ...
+          }
+        }
+      `}</CodePane>
       <Notes></Notes>
     </Slide>
     <Slide>
       <Heading>STORYBOOK.JS</Heading>
+      <Text>
+        Storybook is an open source tool for building UI components and pages in
+        isolation.
+      </Text>
+      <CodePane language="jsx">{`
+       // Button.stories.js
+        import React from 'react';
+        import { Button } from './Button';
+
+        export default {
+          title: 'Button',
+          component: Button,
+        };
+
+        export const Primary = () => <Button primary>Button</Button>;
+      `}</CodePane>
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>PERFORMANCE AND SEO</Heading>
-      <Image src={performanceImage} width="100%" height="100vh" />
+      <Heading>WHAT'S A STORY</Heading>
+      <Text>
+        A story captures the rendered state of a UI component. Developers write
+        multiple stories per component that describe all the “interesting”
+        states a component can support.
+      </Text>
+      <Text>
+        Each example component has a set of stories that show the states it
+        supports. You can browse the stories in the UI and see the code behind
+        them in files that end with .stories.js or .stories.ts.
+      </Text>
+      <Notes></Notes>
+    </Slide>
+    <Slide backgroundImage={`url(${storybook})`} backgroundSize="60%">
       <Notes></Notes>
     </Slide>
     <Slide>
-      <Heading>USER EXPERIENCE</Heading>
-      <Notes></Notes>
-    </Slide>
-    <Slide>
-      <Heading>DEVELOPER EXPERIENCE</Heading>
-      <Notes></Notes>
+      <Heading>BENEFITS OF USING STORYBOOK</Heading>
+      <Text>
+        Storybook provides a sandbox to build UIs in isolation so you can
+        develop hard-to-reach states and edge cases.
+      </Text>
+      <UnorderedList>
+        <ListItem>
+          Save use cases as stories in plain JavaScript to revisit during
+          development, testing, and QA.
+        </ListItem>
+        <ListItem>
+          Use addons to customize your workflow, automate testing, and integrate
+          with your favorite tools.
+        </ListItem>
+      </UnorderedList>
     </Slide>
     <Slide>
       <Heading>REFERENCES</Heading>
