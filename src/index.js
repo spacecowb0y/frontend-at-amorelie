@@ -279,8 +279,8 @@ const SlideFragments = () => (
     <Slide>
       <Heading>REACT.JS</Heading>
       <Text>
-        React is a javascript library to build UIs made by Facebook in 2013. We
-        use to create components that represent{" "}
+        React is a javascript library to build UIs made by Facebook in 2013. It’s
+        used to create components that represent{" "}
         <strong>logical reusable parts of the UI</strong>.
       </Text>
       <CodePane language="jsx">{`
@@ -522,7 +522,7 @@ const SlideFragments = () => (
       <Text>
         Each example component has a set of stories that show the states it
         supports. You can browse the stories in the UI and see the code behind
-        them in files that end with .stories.js or .stories.ts.
+        them in files that end with <CodeSpan>.stories.js</CodeSpan> or <CodeSpan>.stories.ts</CodeSpan>.
       </Text>
       <Notes></Notes>
     </Slide>
