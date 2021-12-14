@@ -572,6 +572,13 @@ const SlideFragments = () => (
         </ListItem>
       </UnorderedList>
     </Slide>
+    <Slide
+      backgroundImage={`url(${bgTheEnd})`}
+      backgroundSize="cover"
+      backgroundColor="white"
+    >
+      <Notes></Notes>
+    </Slide>
     <Slide>
       <Heading>REFERENCES</Heading>
       <UnorderedList>
@@ -698,13 +705,6 @@ const SlideFragments = () => (
           </Link>
         </ListItem>
       </UnorderedList>
-      <Notes></Notes>
-    </Slide>
-    <Slide
-      backgroundImage={`url(${bgTheEnd})`}
-      backgroundSize="cover"
-      backgroundColor="white"
-    >
       <Notes></Notes>
     </Slide>
     <Slide
