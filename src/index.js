@@ -191,7 +191,7 @@ const SlideFragments = () => (
           <ListItem>jQuery and Knockout</ListItem>
         </Appear>
         <Appear>
-          <ListItem>Grunt</ListItem>
+          <ListItem><s>Grunt</s></ListItem>
         </Appear>
       </UnorderedList>
       <Notes></Notes>
