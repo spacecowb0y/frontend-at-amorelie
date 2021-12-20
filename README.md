@@ -1,7 +1,7 @@
 Frontend at Amorelie
 =====================
 
-Frontend Tech Stack for a Modern E-commerce: From Magento to Headless.
+Frontend Tech Stack for a Modern E-commerce: From Magento to React.
 An overview to the future of our next generation frontend architecture at Amorelie.
 
 ## Contents
