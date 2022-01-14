@@ -156,7 +156,7 @@ const SlideFragments = () => (
             <Link href="//storybook.js.org" target="_blank" rel="external">
               Next.js
             </Link>{" "}
-            to <strong>smash it all together</strong>
+            to <strong>for server-side rendering, routing and more</strong>
           </ListItem>
         </Appear>
       </UnorderedList>
