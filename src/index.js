@@ -525,12 +525,6 @@ const SlideFragments = () => (
     >
       <Notes></Notes>
     </Slide>
-    <Slide
-      backgroundImage={`url(${tsErrorImage})`}
-      backgroundSize="cover"
-    >
-      <Notes></Notes>
-    </Slide>
     <Slide>
       <Heading>THE BENEFITS OF TYPESCRIPT</Heading>
       <UnorderedList>
@@ -540,6 +534,12 @@ const SlideFragments = () => (
         <ListItem>Early spotted bugs</ListItem>
         <ListItem>Cross-platform and cross-browser compatibility</ListItem>
       </UnorderedList>
+      <Notes></Notes>
+    </Slide>
+    <Slide
+      backgroundImage={`url(${tsErrorImage})`}
+      backgroundSize="cover"
+    >
       <Notes></Notes>
     </Slide>
     <Slide>
